@@ -1,16 +1,18 @@
 @font-face {
   font-family: Sansation;
-  src: url("../assets/fonts/Sansation-Regular.ttf");
+  src: url("../assets/fonts/Sansation.ttf"),
+    url("https://webdev.aut.ac.nz/~sss0276/assign1/assets/fonts/Sansation.ttf");
 }
 
 @font-face {
   font-family: Lato;
-  src: url("../assets/fonts/Lato-Regular.ttf");
+  src: url("../assets/fonts/Lato.ttf"),
+    url("https://webdev.aut.ac.nz/~sss0276/assign1/assets/fonts/Lato.ttf");
 }
 
 @import "tailwindcss";
 
 @theme {
-  --font-Sansation: Sansation, "sans-serif";
-  --font-Lato: Lato, "sans-serif";
+  --font-sansation: Sansation, sans-serif;
+  --font-lato: Lato, sans-serif;
 }
