@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Sansation;
+  src: url("../assets/fonts/Sansation-Regular.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../assets/fonts/Lato-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-Sansation: Sansation, "sans-serif";
+  --font-Lato: Lato, "sans-serif";
+}
