@@ -22,7 +22,7 @@
         $drop_query = "DROP TABLE IF EXISTS STATUS";
         $result = mysqli_query($conn, $drop_query);
         if($result){
-          echo "<p>Status table drop successfully!</p>";
+          echo "<p>Status table is dropped successfully!</p>";
         } else {
           echo "<p>Failed to reset table!" . mysqli_error($conn) ."</p>";
         }
