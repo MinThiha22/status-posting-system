@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS STATUS (
+  stcode VARCHAR(5) PRIMARY KEY,
+  st TEXT,
+  share VARCHAR(10) NOT NULL,
+  date DATE NOT NULL,
+  permissions VARCHAR(30)
+);
+
+SELECT stcode FROM STATUS WHERE stcode = '$stcode';
+
+INSERT INTO STATUS (stcode, st, share, date, permissions)
+  VALUES ('$stcode', '$status', '$share', '$date', '$permissions');
+
+"SHOW TABLES LIKE 'STATUS'";
+
+SELECT * FROM STATUS WHERE st like '%$search%';
+
+DROP TABLE IF EXISTS STATUS;

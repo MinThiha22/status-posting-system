@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-[#ddefff]">
+    <p class="mt-5 text-center font-sansation text-2xl font-extrabold">About Assignment</p>
+    <div
+      class="font-lato m-5 md:mx-auto md:max-w-3xl flex flex-col space-y-5 border-2 rounded-xl shadow-xl p-10"
+    >
+      <dl class="space-y-4">
+        <dt class="font-bold before:content-['•'] before:mr-2 before:text-black">
+          What special features have you done or attempted in creating the website?
+        </dt>
+        <dd class="text-gray-700 pl-4">
+          I have implemented a responsive website layout using Tailwind CSS, ensuring the website
+          adapts seamlessly to different screen sizes and devices. I installed tailwind CLI to the
+          project, added images and custom fonts to improve design. I also initialise git repository
+          and uploaded the project to github to practise version control.
+        </dd>
+      </dl>
+
+      <dl class="space-y-4">
+        <dt class="font-bold before:content-['•'] before:mr-2 before:text-black">
+          Which part(s) did you have trouble with?
+        </dt>
+        <dd class="text-gray-700 pl-4">
+          One of the challenges that I have is that since I have been using tailwind, I need to
+          regenerate style.css after every design changes. While it works well locally, sometimes
+          syncing style.css to web dev server does not work properly, especially when I connect AUT
+          server from home. It causes some delay in testing and developement. However, I managed to
+          work around this issue by testing design locally before I upload to server.
+        </dd>
+      </dl>
+
+      <dl class="space-y-4">
+        <dt class="font-bold before:content-['•'] before:mr-2 before:text-black">
+          What would you like to do better next time?
+        </dt>
+        <dd class="text-gray-700 pl-4">
+          I would be imporving UI/UX with more interesting and interactive design, such as dark mode
+          toggler. I would also be implementing more error handling and creating more reusable
+          components to enhance efficiency and consistency.
+        </dd>
+      </dl>
+
+      <dl class="space-y-4">
+        <dt class="flex font-bold before:content-['•'] before:mr-2 before:text-black">
+          What you have learnt along the way? Did you use any references or resources during this
+          project? If so, please include the sources
+        </dt>
+        <dd class="text-gray-700 pl-4">
+          During this assignment, I have gained experiences with SQL operation and how PHP handle
+          those operation. Also gained more experiences on creating clean and interactive design
+          using CSS framework. I also learnt more about server side input validation techniques and
+          regular expressions.
+        </dd>
+        <dd class="text-gray-700 pl-4 flex flex-col space-y-1">
+          <span>Sources:</span>
+          <a href="https://www.php.net/docs.php" class="underline text-blue-400"
+            >PHP Documentation</a
+          >
+          <a
+            href="https://tailwindcss.com/docs/installation/tailwind-cli"
+            class="underline text-blue-400"
+            >Tailwind Documentation</a
+          >
+        </dd>
+      </dl>
+
+      <form action="resetdb.php" method="post">
+        <div class="flex items-center">
+          <button
+            type="submit"
+            class="w-1/3 mr-auto border-1 rounded-xl shadow-2xs p-2 border-black bg-amber-100 hover:scale-110 font-lato hover:font-bold hover:text-blue-800"
+          >
+            Reset Database
+          </button>
+          <a
+            href="./index.html"
+            class="text-center w-1/3 ml-auto border-1 rounded-xl shadow-2xs p-2 border-black bg-amber-100 hover:scale-110 font-lato hover:font-bold hover:text-blue-800"
+            >Return to Home Page</a
+          >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
