@@ -28,6 +28,7 @@
           $check_table = "SHOW TABLES LIKE 'STATUS'";
           $table_result = mysqli_query($conn, $check_table);
           if(!$table_result || mysqli_num_rows($table_result)==0){
+            // No status table created
             $no_table = true;
             echo "<p>Status table is not found. Please input status first!</p>";
           } else {
@@ -36,10 +37,12 @@
               SELECT * FROM STATUS WHERE st like '%$search%'
             ";
             $results = mysqli_query($conn, $search_query);
+            // Result not found
             if(mysqli_num_rows($results)<=0){
               $not_found = true;
               echo "<p>Status, \"$search\" is not found. Please try a   different keyword!</p>";
             } else {
+              // Output result 
               while($row = mysqli_fetch_assoc($results)){
                 $formattedDate = date('F j, Y', strtotime($row['date']));
                 echo '<div class="flex flex-col border rounded-lg shadow-md p-5 bg-white space-y-2">';
@@ -56,6 +59,7 @@
         }
       }
     ?>
+    <!-- Change Nav buttons according to search result -->
     <div class="flex items-center">
       <?php
         if($empty_search || $not_found){

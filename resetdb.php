@@ -19,6 +19,7 @@
       if(!$conn){
         echo "<p>Database connection failed!</p>";
       } else {
+        // Drop table
         $drop_query = "DROP TABLE IF EXISTS STATUS";
         $result = mysqli_query($conn, $drop_query);
         if($result){
@@ -30,6 +31,7 @@
       }
       
     ?>
+    <!-- Navigation buttons -->
     <div class="flex items-center">
       <a href="./about.html" class="text-center w-1/3 mr-auto border-1 rounded-xl shadow-2xs p-2 border-black bg-amber-100 hover:scale-110 font-lato hover:font-bold  hover:text-blue-800">Back to About Assignment</a>
       <a href="./index.html" class="text-center w-1/3 ml-auto border-1 rounded-xl shadow-2xs p-2 border-black bg-amber-100 hover:scale-110 font-lato hover:font-bold  hover:text-blue-800">Return to Home Page</a>

@@ -194,6 +194,9 @@
   .m-10 {
     margin: calc(var(--spacing) * 10);
   }
+  .mx-15 {
+    margin-inline: calc(var(--spacing) * 15);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -214,9 +217,6 @@
   }
   .mr-auto {
     margin-right: auto;
-  }
-  .ml-15 {
-    margin-left: calc(var(--spacing) * 15);
   }
   .ml-auto {
     margin-left: auto;
